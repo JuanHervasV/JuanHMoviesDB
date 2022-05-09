@@ -126,7 +126,6 @@ class HomeFragment : Fragment() {
                     binding.moviesRecyclerView.layoutManager = GridLayoutManager(context, 2)
                     initListeners()
                     initObservers()
-                } else {
                 }
             }
         }
