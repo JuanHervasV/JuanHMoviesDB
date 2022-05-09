@@ -113,6 +113,7 @@ class HomeFragment : Fragment() {
     private fun showInternetDialog() {
         val dialog: AlertDialog = AlertDialog.Builder(context)
             .setTitle(R.string.no_internet)
+            .setCancelable(false)
             .setNeutralButton(R.string.try_again, null)
             .create()
 
