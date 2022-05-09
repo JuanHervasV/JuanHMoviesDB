@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">JuanHMoviesDB</string>
+    <string name="owner_app">Juan Hervas</string>
+    <string name="discover">Discovery</string>
+    <string name="try_again">Try again</string>
+    <string name="dialog_internet">Internet Dialog</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_movie">"We couldn't find your movie."</string>
+    <string name="no_internet">Check your internet connection and try again.</string>
+    <string name="smth_wrong">Something went wrong, please choose another movie</string>
+    <string name="accept">Accept</string>
+    <string name="popular_movies">Popular movies</string>
+    <string name="url_first_slider">"https://i.pinimg.com/originals/5a/b9/84/5ab98400691ed21e0d1c0842ae027a88.jpg"</string>
+    <string name="url_first_image_slider">"Iron Man - Details on Search buttom ^"</string>
+    <string name="url_second_slider">"https://i.blogs.es/9648bb/05043c25fb559f4f80de86045f8b92352b134ca7/1366_2000.jpg"</string>
+    <string name="url_second_image_slider">"Venom - Details on Search buttom ^"</string>
+    <string name="url_thrid_slider">"https://s2.best-wallpaper.net/wallpaper/1280x800/1307/Pacific-Rim-movie-HD_1280x800.jpg"</string>
+    <string name="url_thrid_image_slider">"Pacific Rim - Details on Search buttom ^"</string>
+
+</resources>

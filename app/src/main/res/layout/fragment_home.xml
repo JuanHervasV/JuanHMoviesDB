@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        app:layoutDescription="@xml/fragment_home_xml_constraintlayout2_scene">
+
+        <TextView
+            android:id="@+id/ownerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/owner_app"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/discover"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ownerName" />
+
+        <Button
+            android:id="@+id/btnsearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/ic_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txtTitle1" />
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            app:iss_auto_cycle="true"
+            app:iss_delay="0"
+            app:iss_error_image="@drawable/loadingimg"
+            app:iss_period="2000"
+            app:iss_placeholder="@drawable/loadingimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle1" />
+
+        <TextView
+            android:id="@+id/txtPopularM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/popular_movies"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_slider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/moviesRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPopularM"
+            tools:listitem="@layout/movie_item" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jh.juanhmoviesdb.feature.homeScreen.view.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_searchMediaFragment"
+            app:destination="@id/searchMediaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.jh.juanhmoviesdb.feature.moviesDetail.view.DetailsFragment"
+        android:label="DetailsFragment"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="movieTitle"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="movieDescription"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="movieImage"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="idMovies"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchMediaFragment"
+        android:name="com.jh.juanhmoviesdb.feature.searchMedia.view.SearchMediaFragment"
+        android:label="SearchMediaFragment"
+        tools:layout="@layout/fragment_search_media">
+        <action
+            android:id="@+id/action_searchMediaFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+
+</navigation>

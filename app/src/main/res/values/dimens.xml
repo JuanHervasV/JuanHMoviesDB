@@ -1,0 +1,54 @@
+<resources>
+
+    <dimen name="dim_20">20dp</dimen>
+    <dimen name="dim_22">22dp</dimen>
+    <dimen name="dim_10">10dp</dimen>
+    <dimen name="dim_5">5dp</dimen>
+    <dimen name="dim_2">2dp</dimen>
+    <dimen name="dim_3">3dp</dimen>
+    <dimen name="dim_12">12dp</dimen>
+    <dimen name="dim_13">13dp</dimen>
+    <dimen name="dim_14">14dp</dimen>
+    <dimen name="dim_16">16dp</dimen>
+    <dimen name="dim_17">17dp</dimen>
+    <dimen name="dim_18">18dp</dimen>
+    <dimen name="dim_19">19dp</dimen>
+    <dimen name="dim_15">15dp</dimen>
+
+    <dimen name="dim_33">33dp</dimen>
+    <dimen name="dim_34">34dp</dimen>
+    <dimen name="dim_31">31dp</dimen>
+    <dimen name="dim_30">30dp</dimen>
+    <dimen name="dim_23">23dp</dimen>
+    <dimen name="dim_32">32dp</dimen>
+    <dimen name="dim_42">42dp</dimen>
+    <dimen name="dim_48">48dp</dimen>
+    <dimen name="dim_40">40dp</dimen>
+    <dimen name="dim_8">8dp</dimen>
+    <dimen name="dim_4">4dp</dimen>
+    <dimen name="dim_27">27dp</dimen>
+    <dimen name="dim_28">28dp</dimen>
+    <dimen name="dim_38">38dp</dimen>
+    <dimen name="dim_39">39dp</dimen>
+
+    <dimen name="dim_98">98dp</dimen>
+    <dimen name="dim_212">212dp</dimen>
+
+    <dimen name="dim_25">25dp</dimen>
+    <dimen name="dim_24">24dp</dimen>
+    <dimen name="dim_44">44dp</dimen>
+    <dimen name="dim_64">64dp</dimen>
+    <dimen name="dim_55">55dp</dimen>
+    <dimen name="font_size30sp">30sp</dimen>
+    <dimen name="font_size28sp">28sp</dimen>
+    <dimen name="font_size26sp">26sp</dimen>
+    <dimen name="font_size24sp">24sp</dimen>
+    <dimen name="font_size20sp">20sp</dimen>
+    <dimen name="font_size18sp">18sp</dimen>
+    <dimen name="font_size16sp">16sp</dimen>
+    <dimen name="font_size14sp">14sp</dimen>
+    <dimen name="font_size12sp">12sp</dimen>
+    <dimen name="font_size8sp">8sp</dimen>
+
+
+</resources>
