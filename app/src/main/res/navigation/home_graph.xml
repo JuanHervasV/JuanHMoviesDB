@@ -7,45 +7,37 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.jh.juanhmoviesdb.feature.homeScreen.view.home.HomeFragment"
+        android:name="com.data.recipesyape.feature.homeScreen.view.home.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home"
-        >
+        tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_homeFragment_to_searchMediaFragment"
-            app:destination="@id/searchMediaFragment" />
+            android:id="@+id/gotoRecipeDetails"
+            app:destination="@id/detailsFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.jh.juanhmoviesdb.feature.moviesDetail.view.DetailsFragment"
+        android:name="com.data.recipesyape.feature.recipesDetail.view.DetailsFragment"
         android:label="DetailsFragment"
         tools:layout="@layout/fragment_details">
         <argument
-            android:name="movieTitle"
-            app:argType="string"
-            app:nullable="true" />
-        <argument
-            android:name="movieDescription"
-            app:argType="string"
-            app:nullable="true" />
-        <argument
-            android:name="movieImage"
-            app:argType="string"
-            app:nullable="true" />
-        <argument
-            android:name="idMovies"
-            app:argType="integer" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/searchMediaFragment"
-        android:name="com.jh.juanhmoviesdb.feature.searchMedia.view.SearchMediaFragment"
-        android:label="SearchMediaFragment"
-        tools:layout="@layout/fragment_search_media">
+            android:name="modelRecipe"
+            app:argType="com.data.database.model.RecipesDataModel"
+            app:nullable="false" />
         <action
-            android:id="@+id/action_searchMediaFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            android:id="@+id/goToMapsFragment"
+            app:destination="@id/mapsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.data.recipesyape.feature.mapScreen.view.MapsFragment"
+        android:label="MapsFragment"
+        tools:layout="@layout/fragment_maps">
+        <argument
+            android:name="modelRecipe"
+            app:argType="com.data.database.model.RecipesDataModel"
+            app:nullable="false" />
     </fragment>
 
 

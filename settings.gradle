@@ -7,6 +7,7 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "JuanHMoviesDB"
+rootProject.name = "RecipesYape"
 include ':app'
 include ':data'
+include ':dominio'

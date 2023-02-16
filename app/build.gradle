@@ -5,15 +5,16 @@ plugins {
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs.kotlin'
     id 'dagger.hilt.android.plugin'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
 }
 
 android {
-    compileSdk 31
-
+    compileSdkVersion 33
     defaultConfig {
-        applicationId "com.jh.juanhmoviesdb"
-        minSdk 21
-        targetSdk 31
+        applicationId "com.jh.recipesyape"
+        minSdkVersion 21
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -47,6 +48,7 @@ kapt {
 
 dependencies {
     implementation project(path: ':data')
+    implementation project(path: ':dominio')
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
@@ -106,6 +108,9 @@ dependencies {
 
     // Slider
     implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+    //Maps
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
 
     implementation("androidx.activity:activity-ktx:$activity_version")
     implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0'
