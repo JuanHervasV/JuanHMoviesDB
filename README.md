@@ -2,4 +2,5 @@
 
 Kotlin Recipes App - Using Mockable.io API
 
-Coroutines - MVVM - Hilt - Room - Safe Args - Maps - Repos - Data Model - Flow - Adapters...
+Patrón de Diseño : MVVM
+Utilizado : Coroutines - MVVM - Hilt - Room - Safe Args - Maps - Repos - Data Model - Flow - Adapters...
